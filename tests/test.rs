@@ -86,6 +86,11 @@ fn test_max_encoding_length() {
 }
 
 #[test]
+fn test_encode_0() {
+    test_pair(vec![], vec![1])
+}
+
+#[test]
 fn test_encode_1() {
     test_pair(vec![10, 11, 0, 12], vec![3, 10, 11, 2, 12])
 }
